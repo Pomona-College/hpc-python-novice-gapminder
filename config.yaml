@@ -12,6 +12,7 @@ carpentry: 'incubator'
 
 # Overall title for pages.
 title: 'Plotting and Programming in Python — Pomona College HPC Workshop Series'
+description: 'Plotting and data analysis in Python with pandas and matplotlib. Adapted from Software Carpentry for Pomona College.'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: '2016-01-07'
