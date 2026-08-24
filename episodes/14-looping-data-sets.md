@@ -242,7 +242,29 @@ function!
 [pathlib-module]: https://docs.python.org/3/library/pathlib.html
 
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::::::::::::::  callout
+
+## When the loop gets too long: SLURM job arrays
+
+A `for` loop over a handful of files is fine. Once you are looping over
+hundreds, processing them one after another wastes time — each file is
+independent, so they can run at the same time.
+
+That is what a SLURM **job array** is for. Instead of one job looping over 200
+files, you submit one array of 200 tasks and the scheduler runs as many
+concurrently as the cluster allows:
+
+```bash
+#SBATCH --array=1-200
+```
+
+Each task picks its own file using `$SLURM_ARRAY_TASK_ID`. Workshop 18,
+*Parallel Computing Fundamentals*, covers the pattern properly — this is the
+single biggest speed-up available to most people analysing many files.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
 
 - Use a `for` loop to process files given a list of their names.
 - Use `glob.glob` to find sets of files whose names match a pattern.

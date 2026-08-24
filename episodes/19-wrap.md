@@ -37,7 +37,26 @@ turn out to be anything but when we have to explain them precisely.
   [SciPy](https://stackoverflow.com/questions/tagged/scipy?tab=Votes), and
   [Pandas](https://stackoverflow.com/questions/tagged/pandas?tab=Votes).
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Where to go next at Pomona
+
+This workshop is part of the Pomona College HPC Workshop Series. Natural next
+steps from here:
+
+- **Workshop 3 — Introduction to Jupyter Notebooks**: more depth on notebooks,
+  kernels and sharing your work
+- **Workshop 9 — SLURM Job Scheduling**: turn your analysis into a job that
+  runs unattended
+- **Workshop 10 — Software Environments**: manage conda environments properly
+- **Workshop 21 — Reproducible Research Pipelines**: structure a project so it
+  still runs a year from now
+
+Questions about the cluster or the series: <its-hpc@pomona.edu>
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
 
 - Python supports a large and diverse community across academia and industry.
 

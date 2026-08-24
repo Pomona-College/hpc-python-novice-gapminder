@@ -652,7 +652,29 @@ Practice closing and restarting the JupyterLab server.
 [data_carpentry]: https://datacarpentry.org
 
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Running this workshop on Sagehen
+
+You do not need to install anything locally. The quickest route is the
+OnDemand portal at <https://ondemand.hpc.pomona.edu/> — sign in with your
+Pomona credentials and DUO, then choose **Interactive Apps → Jupyter**.
+
+Request modest resources for this workshop: 2 cores, 4 GB of memory and 3
+hours is plenty. Everything you write runs on a compute node, so nothing you
+do here will slow down the login node for other users.
+
+If you prefer the terminal, `ssh <myusername>@sagehen.hpc.pomona.edu` then
+start an interactive session before launching anything heavy:
+
+```bash
+srun --partition=short --time=03:00:00 --mem=4G --pty bash
+module load miniconda3
+```
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
 
 - Python scripts are plain text files.
 - Use the Jupyter Notebook for editing and running Python.

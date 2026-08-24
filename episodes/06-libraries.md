@@ -461,7 +461,35 @@ Python's strength comes from its vast ecosystem of libraries. NumPy for numerica
 [pep8-imports]: https://pep8.org/#imports
 
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Where libraries come from on Sagehen
+
+Sagehen does not have a `python` module. Python, pandas and matplotlib all
+come from conda:
+
+```bash
+module load miniconda3
+conda activate <your-environment>
+```
+
+If a library you need is missing, do **not** run `pip install` on its own —
+on a shared cluster it may install into a Python you are not actually using,
+and the import will still fail. Create your own environment instead, and
+install into it explicitly:
+
+```bash
+conda create -n plotting python=3.11 pandas matplotlib jupyter pip -y
+conda activate plotting
+python3 -m pip install <anything-conda-lacks>
+```
+
+Workshop 10, *Software Environments and Module Management*, covers this in
+full.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
 
 - Most of the power of a programming language is in its libraries.
 - A program must import a library module in order to use it.

@@ -373,7 +373,36 @@ Whenever you are generating plots to go into a paper or a presentation, there ar
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Saving plots from a batch job
+
+Plots appear inline in Jupyter because a display is attached. A SLURM batch
+job has no display, and the same script will fail or silently produce nothing.
+
+Select a non-interactive backend **before** importing pyplot:
+
+```python
+import matplotlib
+matplotlib.use('Agg')      # must come first
+import matplotlib.pyplot as plt
+```
+
+Then write the figure to a file rather than calling `plt.show()`:
+
+```python
+plt.savefig('/bigdata/lab/<labname>/figures/gdp_over_time.png', dpi=300,
+            bbox_inches='tight')
+plt.close()
+```
+
+Save publication figures under `/bigdata` so they are stored alongside the
+data they describe. `plt.close()` matters in loops — otherwise every figure
+stays in memory until the job ends.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
 
 - [`matplotlib`](https://matplotlib.org/) is the most widely used scientific plotting library in Python.
 - Plot data directly from a Pandas dataframe.

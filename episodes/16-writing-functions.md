@@ -668,7 +668,32 @@ value of this column for every row in the dataframe.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::::::::::::::  callout
+
+## From notebook to submitted job
+
+Functions are what make a notebook portable. Once your analysis is a few
+well-named functions, you can move them into a `.py` file and submit it to the
+cluster instead of babysitting a notebook:
+
+```bash
+#!/bin/bash
+#SBATCH --job-name=analysis
+#SBATCH --partition=amd
+#SBATCH --time=01:00:00
+#SBATCH --mem=8G
+
+module load miniconda3
+conda activate plotting
+python3 analyse_gapminder.py
+```
+
+Submit with `sbatch analysis.sh`. The job runs whether or not your laptop is
+open. Workshop 9, *SLURM Job Scheduling on Sagehen*, goes into detail.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
 
 - Break programs down into functions to make them easier to understand.
 - Define a function using `def` with a name, parameters, and a block of code.

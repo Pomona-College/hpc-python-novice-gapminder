@@ -778,7 +778,27 @@ for the entire twentieth century?
 [numpy]: https://www.numpy.org/
 
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::::::::::::::  callout
+
+## DataFrames and memory on a shared node
+
+A DataFrame lives entirely in memory, and on Sagehen you only get the memory
+you asked for. If a job is killed with no traceback, an out-of-memory kill is
+the usual reason.
+
+Check what a DataFrame is actually costing you:
+
+```python
+print(f"{data.memory_usage(deep=True).sum() / 1e6:.1f} MB")
+```
+
+A useful rule of thumb is to request roughly three times the size of your data,
+since intermediate copies during a merge or groupby can briefly double or
+triple usage.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
 
 - Use `DataFrame.iloc[..., ...]` to select values by integer location.
 - Use `:` on its own to mean all columns or all rows.

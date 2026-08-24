@@ -429,7 +429,25 @@ e.g., `data_americas.to_csv` or `data_oceania.to_csv`
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+:::::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Where your data should live on Sagehen
+
+The path you pass to `read_csv` matters more on a cluster than on a laptop:
+
+| Location | Quota | Use it for |
+|---|---|---|
+| `/rhome/<myusername>` | 100 GB | code, notebooks, small inputs |
+| `/bigdata/lab/<labname>` | 1 TB per lab | the real datasets, shared with your group |
+| `/scratch` | node-local | working files **inside a single job only** |
+
+Read source data from `/bigdata` and keep your notebooks in `/rhome`. Anything
+written to `/scratch` disappears when the job ends, so never leave results
+there.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: keypoints
 
 - Use the Pandas library to get basic statistics out of tabular data.
 - Use `index_col` to specify that a column's values should be used as row headings.
