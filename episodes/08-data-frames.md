@@ -250,6 +250,7 @@ throughly:
 * It uses implicit conversion between boolean and float values which 
 has not been covered in the course so far. 
 * The axis=1 argument needs to be explained clearly.
+:::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Pandas vectorizing methods and grouping operations are features that provide users
 much flexibility to analyse their data.
