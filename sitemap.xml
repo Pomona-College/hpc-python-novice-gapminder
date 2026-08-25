@@ -70,7 +70,13 @@
     <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/aio.html</loc>
+  </url>
+  <url>
     <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/design.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/images.html</loc>
   </url>
   <url>
     <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/index.html</loc>
@@ -145,16 +151,34 @@
     <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/instructor/design.html</loc>
   </url>
   <url>
+    <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/instructor/profiles.html</loc>
   </url>
   <url>
     <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/key-points.html</loc>
   </url>
   <url>
     <loc>https://pomona-college.github.io/hpc-python-novice-gapminder/profiles.html</loc>
