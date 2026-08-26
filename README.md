@@ -10,7 +10,7 @@ Plotting and data analysis in Python with pandas and matplotlib. Adapted from So
 
 This is Pomona College's adaptation of the Software Carpentry lesson
 [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/), reworked for researchers and
-students using the **Sagehen** HPC cluster. Alongside the original material it
+students using the **Sagehen HPC** HPC cluster. Alongside the original material it
 covers how the work is done here: launching sessions through the OnDemand
 portal, where data and results belong on Sagehen's storage tiers, and when to
 move an analysis from an interactive session into a submitted job.

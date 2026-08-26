@@ -654,7 +654,7 @@ Practice closing and restarting the JupyterLab server.
 
 :::::::::::::::::::::::::::::::::::::::::::::  callout
 
-## Running this workshop on Sagehen
+## Running this workshop on Sagehen HPC
 
 You do not need to install anything locally. The quickest route is the
 OnDemand portal at <https://ondemand.hpc.pomona.edu/> — sign in with your

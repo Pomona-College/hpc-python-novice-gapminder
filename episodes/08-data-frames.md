@@ -783,7 +783,7 @@ for the entire twentieth century?
 
 ## DataFrames and memory on a shared node
 
-A DataFrame lives entirely in memory, and on Sagehen you only get the memory
+A DataFrame lives entirely in memory, and on Sagehen HPC you only get the memory
 you asked for. If a job is killed with no traceback, an out-of-memory kill is
 the usual reason.
 

@@ -16,7 +16,7 @@ by [Software Carpentry](https://software-carpentry.org/).
 **Support:** its-hpc@pomona.edu
 
 Python and its scientific libraries (NumPy, Pandas, Matplotlib) are
-available on Sagehen via `module load miniconda3`. Practice interactively
+available on Sagehen HPC via `module load miniconda3`. Practice interactively
 through Jupyter on OnDemand.
 
 *Adapted for Pomona College by Andrew Wilson, ITS Research Computing.
