@@ -20,7 +20,7 @@ exercises: 10
 
 ## Use the Pandas library to do statistics on tabular data.
 
-In this episode we will analyze the gapminder dataset, but the same code patterns apply directly to data you might collect at Pomona — for example, **Cecil Sagehen's lab measurements** stored on Sagehen at `/bigdata/lab/biolab/`, or a **Pomona biology cohort 2024** roster exported from a survey tool.
+In this episode we will analyze the gapminder dataset, but the same code patterns apply directly to data you might collect at Pomona — for example, **Cecil Sagehen HPC's lab measurements** stored on Sagehen at `/bigdata/lab/biolab/`, or a **Pomona biology cohort 2024** roster exported from a survey tool.
 
 - [Pandas](https://pandas.pydata.org/) is a widely-used Python library for statistics, particularly on tabular data.
 - Borrows many features from R's dataframes.
@@ -431,7 +431,7 @@ e.g., `data_americas.to_csv` or `data_oceania.to_csv`
 
 :::::::::::::::::::::::::::::::::::::::::::::  callout
 
-## Where your data should live on Sagehen
+## Where your data should live on Sagehen HPC
 
 The path you pass to `read_csv` matters more on a cluster than on a laptop:
 

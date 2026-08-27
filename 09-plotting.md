@@ -23,7 +23,7 @@ exercises: 15
 - Commonly use a sub-library called [`matplotlib.pyplot`](https://matplotlib.org/stable/tutorials/introductory/pyplot.html).
 - The Jupyter Notebook will render plots inline by default — including the JupyterLab session you launch from the Pomona OnDemand portal.
 
-Whenever you save figures destined for publication, write them under your lab's `/bigdata` share on Sagehen so they are backed up alongside the data they describe (for example, `/bigdata/lab/biolab/figures/`).
+Whenever you save figures destined for publication, write them under your lab's `/bigdata` share on Sagehen HPC so they are backed up alongside the data they describe (for example, `/bigdata/lab/biolab/figures/`).
 
 ```python
 import matplotlib.pyplot as plt

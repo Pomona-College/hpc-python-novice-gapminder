@@ -45,7 +45,7 @@ The workshop consists of 20 episodes organized into logical learning blocks:
 ### Environment Setup
 - Ensure Jupyter is running smoothly before the workshop starts. Test it with the Gapminder data file.
 - Have Python and required packages (pandas, matplotlib, numpy) installed and verified.
-- Provide clear instructions for accessing Jupyter (locally or via the HPC OnDemand portal if running on Sagehen).
+- Provide clear instructions for accessing Jupyter (locally or via the HPC OnDemand portal if running on Sagehen HPC).
 
 ### Engagement Strategies
 - Use the Gapminder dataset as a motivating narrative. Students often find it interesting to explore GDP and life expectancy trends.

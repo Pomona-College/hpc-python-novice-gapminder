@@ -42,7 +42,7 @@ title: Learner Profiles
 **Motivation:**
 - Processing behavioral experiment data (reaction times, accuracy) from Pomona undergraduate participants
 - Runs 20+ experiments per year, scheduled across the academic calendar
-- Wants to automate plotting and statistical summaries so weekly figures are produced as a SLURM batch job on Sagehen
+- Wants to automate plotting and statistical summaries so weekly figures are produced as a SLURM batch job on Sagehen HPC
 - Currently uses Excel, wants to move to Python
 
 **Experience:**
@@ -74,7 +74,7 @@ title: Learner Profiles
 - Starting undergraduate research project on climate and agriculture
 - Needs to learn data visualization for research reports for an environmental analysis senior thesis
 - Planning to pursue graduate study in environmental science
-- First real programming experience for science; will use the Sagehen cluster for any analyses too large for a laptop
+- First real programming experience for science; will use the Sagehen HPC cluster for any analyses too large for a laptop
 
 **Experience:**
 - Beginner programmer (some high school CS, intro college course)

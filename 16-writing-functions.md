@@ -577,40 +577,38 @@ density. In the model, time takes discrete values 0, 1, 2, ...
 ## Solution
 
 1. ```python
-  def logistic_map(x, r):
-      return r * x * (1 - x)
-  ```
+   def logistic_map(x, r):
+       return r * x * (1 - x)
+   ```
 
 2. ```python
-  initial_population = 0.5
-  t_final = 10
-  r = 1.0
-  population = [initial_population]
-  for t in range(t_final):
-      population.append( logistic_map(population[t], r) )
-  ```
+   initial_population = 0.5
+   t_final = 10
+   r = 1.0
+   population = [initial_population]
+   for t in range(t_final):
+       population.append( logistic_map(population[t], r) )
+   ```
 
 3. ```python
-  def iterate(initial_population, t_final, r):
-      population = [initial_population]
-      for t in range(t_final):
-          population.append( logistic_map(population[t], r) )
-      return population
-  
-  for period in (10, 100, 1000):
-      population = iterate(0.5, period, 1)
-      print(population[-1])
-  ```
-  
-  ```output
-  0.06945089389714401
-  0.009395779870614648
-  0.0009913908614406382
-  ```
-  
-  The population seems to be approaching zero.
-  
-  
+   def iterate(initial_population, t_final, r):
+       population = [initial_population]
+       for t in range(t_final):
+           population.append( logistic_map(population[t], r) )
+       return population
+
+   for period in (10, 100, 1000):
+       population = iterate(0.5, period, 1)
+       print(population[-1])
+   ```
+
+   ```output
+   0.06945089389714401
+   0.009395779870614648
+   0.0009913908614406382
+   ```
+
+   The population seems to be approaching zero.
 
 :::::::::::::::::::::::::
 

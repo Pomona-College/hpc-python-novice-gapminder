@@ -463,7 +463,7 @@ Python's strength comes from its vast ecosystem of libraries. NumPy for numerica
 
 :::::::::::::::::::::::::::::::::::::::::::::  callout
 
-## Where libraries come from on Sagehen
+## Where libraries come from on Sagehen HPC
 
 Sagehen does not have a `python` module. Python, pandas and matplotlib all
 come from conda:
